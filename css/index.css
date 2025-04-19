@@ -1,0 +1,495 @@
+@import url(/css/reset.css);
+header .navbar{
+    position: absolute;
+    top: 0;
+    left: 4%;
+    right: 4%;
+    margin-top: 4%;
+    
+    a{
+        font-size: 30px; 
+        color: #444444;
+         font-weight: bolder;
+    }
+    ul li a{
+        font-size: 19px; 
+        color: #161616;
+        font-weight: 600;
+        margin-left: 20px;
+    }
+    ul li:hover{
+        color: #FFB606;
+    }
+}
+
+.phone-container{
+    background-color: #d3a92a;
+    padding: 20px;
+    p{
+        color: white;
+        font-size: 19px;
+        font-weight: bold;
+        i{
+            margin-right: 20px;
+            font-size: 30px;
+        }
+    }
+}
+header .text{
+    position: absolute;
+    top: 50%;
+    left: 23%;
+    h1{
+        font-size: 70px;
+        letter-spacing: 1px;
+        font-weight: 500;
+        color: white;
+        span{
+            background-color: #d3a92a; 
+            padding: 5px; 
+            color: white;
+            font-size: 60px;
+        }
+    }
+}
+@media (max-width:1200px){
+    header .text h1{
+        font-size:40px;
+    }
+}
+
+.box-container{
+      position: absolute;
+      bottom: 6%;
+      left: 0;
+      right: 0;
+      p{
+        font-size: 17px; 
+        font-weight: 500;
+      }
+    .hero-box{
+        width: 100%;
+        height: 170px;
+        background: #1a1a1a;
+        padding-left: 50px;
+        cursor: pointer;
+        color: white;
+        i{
+            font-size: 50px;
+            margin-right: 30px;
+            color:  #FFD43B;
+    
+        }
+    }
+    .hero-box:hover{
+        background-color: #d3a92a;
+        color: white;
+        i{
+            color: white;
+        }
+    }
+    .hero-box p:hover{
+        color: #1a1a1a;
+    }
+    
+}
+main .author-container{
+    .author{
+        img{
+            border-radius: 50%; 
+            width: 55px;
+             height: 55px;
+        }
+        h4{
+            font-size: 17px; 
+            font-family: 'Roboto',sans-serif;
+             margin-top: 18px;
+        }
+        button{
+            padding: 20px;
+            font-size: 22px; 
+            color: white; 
+            font-weight: 600;
+             background-color: #d3a92a;
+              border: none;
+        }
+    }
+}
+main .discount-container{
+    h1{
+        line-height: 1.5;
+         font-family: 'Roboto',sans-serif;
+    }
+    p{
+        font-size: 15px; 
+        font-weight: 600; 
+        line-height: 2.5;
+    }
+}
+main .discount-container .text-container{
+    background-color: #FFB606;
+    color: white;
+    height: 100vh;
+    button{
+        width: 222px;
+        height: 48px;
+        border: none;
+        background-color: black;
+        color: white;
+        font-weight: 600;
+    }
+    button:hover{
+        box-shadow: 2px 14px 32px 5px rgba(255,69,0,0.75);
+    }
+}
+main .login-container{
+    background-image: url(/image-container/search_background.jpg.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    input{
+        width: 70%;
+        padding: 8px 30px 8px 30px;
+        margin-left: 15%;
+        border: none;
+    }
+}
+@media (max-width:926px){
+    header {
+        margin-top: 50px;
+    }
+    header img{
+        width: 100%;
+        height: 98vh;
+    }
+    header .box-container{
+       display: none;
+    }
+    main .popular-course-container .author-container{
+        padding-left: 10px;
+    }
+}
+
+main .our-students{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)), url(/image-container/testimonials_background.jpg);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .card-title{
+            width:6%;
+            height: 4px;
+            background-color: #FFB606;
+            margin-bottom: 30px;
+    }
+    h3{
+        color: white;
+        font-weight: 500;
+        font-size: 40px;
+    }
+    p{
+        text-align: center;
+        color: white;
+        font-weight: 500;
+        font-size: 17px;
+        margin-left: 200px;
+        margin-right: 200px;
+        margin-top: 20px;
+    }
+    .small-image-part{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+        img{
+            border-radius: 50%;
+        }
+        h4{
+            color: #FFB606;
+            margin-top: 20px;
+        }
+    }
+}
+
+
+main .our-services .card{
+    display: flex;
+    flex-direction: column;
+    border: none;
+    img{
+        width: 41px;
+        height: 41px;
+        margin-left: 15px;
+    }
+    
+    .card-body {
+        h5{
+            font-size: 25px;
+        padding: 5px 5px 10px 0;
+        font-weight: 500;
+        }
+        p{
+            color: grey;
+            font-weight: 600;
+            font-size: 17px;
+            line-height: 2;
+        }
+    }
+}
+
+main .upcoming-events{
+    margin-top: 100px;
+}
+main .upcoming-events-card{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    .event-text-container{
+        padding-left:20px;
+        p{
+            color: grey;
+            font-size: 17px;
+            line-height: 1.5;
+        }
+    }
+    img{
+        width: 350px;
+        height: 182px;
+        margin-left: 40px;
+    }
+    button{
+        padding: 60px 30px 60px 30px;
+        border: 3px solid #FFB606;
+        color: #FFB606;
+        font-size: 27px;
+        font-weight: bolder;
+        background-color: white;
+    }
+}
+footer .card{
+    width: 100%;
+    height: auto;
+    background-color: #1a1a1a;
+    color: white;
+    .card-header{
+        border-bottom: 1px solid grey;
+        padding: 60px;
+        .card-title{
+            width: 6%;
+            height: 4px;
+            background-color: #FFB606;
+            margin-left: 47%;
+        }
+        .card-text{
+            font-size: 40px;
+            font-weight: 500;
+        }
+        form{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 50px;
+            input{
+                width: 40%;
+                border-radius: 0;
+            }
+            button{
+                   color: white;
+                   font-weight: 500;
+                   border-radius: 0;
+            }
+        }
+    }
+    .card-body{
+        border-bottom: 1px solid grey;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 60px;
+        .menu, .usefull-links,.contact{
+            display: flex;
+            flex-direction: column;
+            h5{
+                margin-left: 25px;
+                margin-bottom: 25px;
+                font-size: 23px;
+            }
+            ul{
+                list-style-type: none;
+            }
+            li{
+                margin-bottom: 5px;
+            }
+            li i{
+                color: #FFB606;
+                font-size: 18px;
+                margin-right:10px ;
+            }
+            li a{
+                text-decoration: none;
+                color: grey;
+                font-size: 18px;
+            }
+            li a:hover{
+                color: #FFB606;
+            }
+        }
+    }
+    .card-footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px;
+        P{
+            color: white;
+        }
+        i{
+            color: grey;
+            margin-right:20px ;
+            font-size: 20px;
+        }
+    }
+
+}
+
+
+
+@media (max-width: 480px) {
+    header .navbar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    header .text {
+        top: 30%;
+        left: 5%;
+        h1 {
+            font-size: 30px;
+            span {
+                font-size: 25px;
+            }
+        }
+    }
+
+    main .login-container input {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    main .our-students p {
+        margin: 10px;
+    }
+
+    .box-container {
+        padding: 10px;
+    }
+
+    main .upcoming-events-card {
+        flex-direction: column;
+        align-items: center;
+        img {
+            width: 90%;
+            height: auto;
+            margin: 0;
+        }
+
+        button {
+            width: 80%;
+            padding: 20px;
+            font-size: 20px;
+        }
+    }
+
+    footer .card-body {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        .menu, .usefull-links, .contact {
+            margin-bottom: 30px;
+        }
+    }
+
+    footer .card-header form {
+        flex-direction: column;
+        input {
+            width: 80%;
+            margin-bottom: 20px;
+        }
+        button {
+            width: 50%;
+        }
+    }
+
+    footer .card-footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 768px) {
+    header .text h1 {
+        font-size: 45px;
+        span {
+            font-size: 35px;
+        }
+    }
+
+    main .our-students p {
+        margin: 0 40px;
+    }
+
+    main .upcoming-events-card {
+        flex-direction: column;
+        img {
+            width: 100%;
+            height: auto;
+        }
+        button {
+            width: 70%;
+            padding: 30px;
+        }
+    }
+
+    footer .card-body {
+        flex-direction: column;
+        .menu, .usefull-links, .contact {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+
+@media (max-width: 1024px) {
+    header .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    header .text {
+        left: 10%;
+    }
+
+    main .login-container input {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    footer .card-body {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    footer .card-header .card-title {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
